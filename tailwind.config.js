@@ -7,7 +7,7 @@ export default {
         restaurant: {
           light: "#F5F5F5",
           primaryGreen: "#88C7BC",
-          secondaryGreen: "#017679",
+          secondaryGreen: "#254A1E",
           primaryPink: "#FFE4DB",
           secondaryPink: "#E3997E",
         },

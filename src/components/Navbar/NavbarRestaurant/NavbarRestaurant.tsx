@@ -22,7 +22,7 @@ const NavbarRestaurant: React.FC = () => {
           <Link to="/showcase/restaurant/contact">Contact</Link>
         </li>
         <li>
-          <a href="tel:0100000000">NumberPhone (01 00 00 00 00)</a>
+          <a href="tel:0100000000">+33 1 XX XX XX XX</a>
         </li>
       </ul>
     </nav>

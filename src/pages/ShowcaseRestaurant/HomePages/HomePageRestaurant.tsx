@@ -1,12 +1,12 @@
 import React from "react";
 import NavbarRestaurant from "../../../components/Navbar/NavbarRestaurant/NavbarRestaurant";
+import HeaderRestaurant from "../HeaderRestaurant/HeaderRestaurant";
 
 const HomePageRestaurant: React.FC = () => {
   return (
-    <div className="bg-restaurant-light h-screen ">
+    <div className="bg-restaurant-light h-full ">
       <NavbarRestaurant />
-      <h1>Welcome to the Restaurant Home Page</h1>
-      {/* Add your content here */}
+      <HeaderRestaurant />
     </div>
   );
 };

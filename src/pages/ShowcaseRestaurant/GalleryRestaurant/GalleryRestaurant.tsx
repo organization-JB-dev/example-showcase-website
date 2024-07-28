@@ -1,8 +1,14 @@
 import React from "react";
-import { RowsPhotoAlbum } from "react-photo-album";
-import "react-photo-album/rows.css";
+import {
+  ColumnsPhotoAlbum,
+  MasonryPhotoAlbum,
+  RowsPhotoAlbum,
+} from "react-photo-album";
 import NavbarRestaurant from "../../../components/Navbar/NavbarRestaurant/NavbarRestaurant";
 import photos from "./photos";
+import "react-photo-album/masonry.css";
+import "react-photo-album/rows.css";
+import "react-photo-album/columns.css";
 
 const GalleryRestaurant: React.FC = () => {
   // const photos = [
@@ -20,7 +26,9 @@ const GalleryRestaurant: React.FC = () => {
     <div>
       <NavbarRestaurant />
       <div className="p-20">
-        <RowsPhotoAlbum photos={photos} />
+        {/* <ColumnsPhotoAlbum photos={photos} /> */}
+        <MasonryPhotoAlbum photos={photos} />
+        {/* <RowsPhotoAlbum photos={photos} /> */}
       </div>
     </div>
   );

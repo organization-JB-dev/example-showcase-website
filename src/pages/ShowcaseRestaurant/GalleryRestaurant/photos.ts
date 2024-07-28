@@ -148,6 +148,11 @@ const photos = [
       alt,
       width,
       height,
+      srcSet: breakpoints.map((breakpoint) => ({
+        src: asset,
+        width: breakpoint,
+        height: Math.round((height / width) * breakpoint),
+      })),
     } as Photo)
 );
 

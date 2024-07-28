@@ -1,7 +1,7 @@
 import React from "react";
 import NavbarRestaurant from "../../../components/Navbar/NavbarRestaurant/NavbarRestaurant";
-import HeaderRestaurant from "../HeaderRestaurant/HeaderRestaurant";
-import BodyHomeRestaurant from "../BodyHomeRestaurant/BodyHomeRestaurant";
+import HeaderRestaurant from "./HeaderRestaurant/HeaderRestaurant";
+import BodyHomeRestaurant from "./BodyHomeRestaurant/BodyHomeRestaurant";
 
 const HomePageRestaurant: React.FC = () => {
   return (

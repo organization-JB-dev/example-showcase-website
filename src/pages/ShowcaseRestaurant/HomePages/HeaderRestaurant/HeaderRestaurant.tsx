@@ -1,7 +1,7 @@
 import React from "react";
 
-import FullButtonHoverTransparent from "../../../components/Button/FullButtonHoverTransparent";
-import TransparentButtonHoverFull from "../../../components/Button/TransparentButtonHoverFull";
+import FullButtonHoverTransparent from "../../../../components/Button/FullButtonHoverTransparent";
+import TransparentButtonHoverFull from "../../../../components/Button/TransparentButtonHoverFull";
 import { FaChevronDown } from "react-icons/fa6";
 
 const HeaderRestaurant: React.FC = () => {

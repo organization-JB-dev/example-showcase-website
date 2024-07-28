@@ -1,7 +1,18 @@
 import React from "react";
-import FullButtonHoverTransparent from "../../../components/Button/FullButtonHoverTransparent";
+import FullButtonHoverTransparent from "../../../../components/Button/FullButtonHoverTransparent";
+import CardHoraires from "../../../../components/CardHoraires/CardHoraires";
+import TransparentButtonHoverFull from "../../../../components/Button/TransparentButtonHoverFull";
 
 const BodyHomeRestaurant: React.FC = () => {
+  const horaires = [
+    { jour: "Lundi", heures: "Fermé / 19h00 - 22h30" },
+    { jour: "Mardi", heures: "12h00 - 14h30 / 19h00 - 22h30" },
+    { jour: "Mercredi", heures: "12h00 - 14h30 / Fermé" },
+    { jour: "Jeudi", heures: "12h00 - 14h30 / 19h00 - 22h30" },
+    { jour: "Vendredi", heures: "12h00 - 14h30 / 19h00 - 22h30" },
+    { jour: "Samedi", heures: "12h00 - 14h30 / 19h00 - 22h30" },
+    { jour: "Dimanche", heures: "Fermé" },
+  ];
   return (
     <div className="m-auto w-3/4 py-10">
       <h1 className="text-3xl">Bienvenue à VEGAN </h1>
@@ -54,6 +65,26 @@ const BodyHomeRestaurant: React.FC = () => {
         <h2 className="text-center text-5xl py-10">Ce Que Vous Pensez</h2>
         <div className="bg-restaurant-primaryGreen w-1/3 py-20 text-center text-restaurant-light">
           <p>ici commentaire tripadvisor</p>
+        </div>
+      </div>
+      <div className="flex justify-center">
+        <div className="bg-restaurant-primaryGreen w-2/5 flex flex-col justify-center items-center p-4 m-10 rounded-lg  text-restaurant-light text-shadow-sm">
+          <h2 className="text-3xl">Nos Horaires</h2>
+          <CardHoraires horaires={horaires} />
+          <TransparentButtonHoverFull
+            to="/showcase/restaurant/menu"
+            title="Menu"
+            color="light"
+          />
+        </div>
+        <div className="bg-restaurant-primaryGreen w-2/5 flex flex-col justify-between items-center p-4 m-10 rounded-lg  text-restaurant-light text-shadow-sm">
+          <h2 className="text-3xl">Contactez-nous</h2>
+          <p> nous répondons sous 24h</p>
+          <TransparentButtonHoverFull
+            to="/showcase/restaurant/contact"
+            title="Contactez-nous"
+            color="light"
+          />
         </div>
       </div>
     </div>

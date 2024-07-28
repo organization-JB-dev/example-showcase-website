@@ -23,7 +23,7 @@ const GalleryRestaurant: React.FC = () => {
   //   { src: "/img/frontRestaurant.jpg", width: 80, height: 120 },
   // ];
   return (
-    <div>
+    <div className="bg-restaurant-light">
       <NavbarRestaurant />
       <div className="p-20">
         {/* <ColumnsPhotoAlbum photos={photos} /> */}

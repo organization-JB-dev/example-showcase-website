@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const NavbarRestaurant: React.FC = () => {
   return (
-    <nav className="bg-restaurant-primaryGreen flex flex-row justify-around fixed w-full font-bold text-restaurant-light">
+    <nav className="bg-restaurant-primaryGreen flex flex-row justify-around fixed w-full font-bold text-restaurant-light z-10">
       <Link to="/showcase/restaurant">
         <img
           src="/img/logoRestaurant.png"

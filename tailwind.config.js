@@ -11,8 +11,37 @@ export default {
           primaryPink: "#FFE4DB",
           secondaryPink: "#E3997E",
         },
+        textShadow: {
+          default: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+          md: "3px 3px 6px rgba(0, 0, 0, 0.5)",
+          lg: "4px 4px 8px rgba(0, 0, 0, 0.5)",
+          light: "1px 1px 2px rgba(0, 0, 0, 0.25)",
+          "very-light": "1px 1px 2px rgba(0, 0, 0, 0.1)",
+        },
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        ".text-shadow": {
+          textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+        },
+        ".text-shadow-md": {
+          textShadow: "3px 3px 6px rgba(0, 0, 0, 0.5)",
+        },
+        ".text-shadow-lg": {
+          textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)",
+        },
+        ".text-shadow-sm": {
+          textShadow: "1px 1px 2px rgba(0, 0, 0, 0.25)",
+        },
+        ".text-shadow-xs": {
+          textShadow: "1px 1px 2px rgba(0, 0, 0, 0.1)",
+        },
+      };
+
+      addUtilities(newUtilities, ["responsive", "hover"]);
+    },
+  ],
 };

@@ -5,6 +5,7 @@ import NotFound from "../NotFound/NotFound";
 import HomePageRestaurant from "../../pages/ShowcaseRestaurant/HomePages/HomePageRestaurant";
 import MenuRestaurant from "../../pages/ShowcaseRestaurant/MenuRestaurant/MenuRestaurant";
 import GalleryRestaurant from "../../pages/ShowcaseRestaurant/GalleryRestaurant/GalleryRestaurant";
+import ContactRestaurant from "../../pages/ShowcaseRestaurant/ContactRestaurant/ContactRestaurant";
 
 function App() {
   return (
@@ -15,6 +16,10 @@ function App() {
       <Route
         path="/showcase/restaurant/galerie"
         element={<GalleryRestaurant />}
+      />
+      <Route
+        path="/showcase/restaurant/contact"
+        element={<ContactRestaurant />}
       />
       <Route path="/*" element={<NotFound />} />
     </Routes>

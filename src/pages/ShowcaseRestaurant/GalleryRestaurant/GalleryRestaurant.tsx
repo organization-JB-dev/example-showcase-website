@@ -26,8 +26,8 @@ const GalleryRestaurant: React.FC = () => {
     <div className="bg-restaurant-light">
       <NavbarRestaurant />
       <div className="p-20">
-        {/* <ColumnsPhotoAlbum photos={photos} /> */}
-        <MasonryPhotoAlbum photos={photos} />
+        <ColumnsPhotoAlbum photos={photos} />
+        {/* <MasonryPhotoAlbum photos={photos} /> */}
         {/* <RowsPhotoAlbum photos={photos} /> */}
       </div>
     </div>

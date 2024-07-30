@@ -15,8 +15,8 @@ const BodyHomeRestaurant: React.FC = () => {
   ];
   return (
     <div className="m-auto w-3/4 py-10">
-      <h1 className="text-3xl">Bienvenue à VEGAN </h1>
-      <div className="flex flex-row justify-center py-10 gap-10 ">
+      <h1 className="text-4xl text-center">Bienvenue à VEGAN </h1>
+      <div className="flex md:flex-row flex-col items-center justify-center py-10 gap-10 ">
         <p className="text-lg text-justify text-shadow-sm leading-loose">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
           voluptates, cumque, quae, quas voluptas quod quidem iusto quibusdam
@@ -34,10 +34,10 @@ const BodyHomeRestaurant: React.FC = () => {
           className="w-80 rounded-xl"
         />
       </div>
-      <div className="w-1/2 flex items-end justify-end ml-2">
-        <h2 className="text-3xl">Nos plats</h2>
-      </div>
-      <div className="flex flex-row justify-center py-10 gap-10 ">
+
+      <h2 className="text-4xl text-center">Nos plats</h2>
+
+      <div className="flex md:flex-row flex-col justify-center items-center py-10 gap-10 ">
         <img
           src="/img/plat.jpg"
           alt="image de plat vegan source unsplash (https://unsplash.com/fr/photos/salade-vue-de-dessus-avec-guacamole-oaz0raysASk)"
@@ -67,8 +67,8 @@ const BodyHomeRestaurant: React.FC = () => {
           <p>ici commentaire tripadvisor</p>
         </div>
       </div>
-      <div className="flex justify-center">
-        <div className="bg-restaurant-primaryGreen w-2/5 flex flex-col justify-center items-center p-4 m-10 rounded-lg  text-restaurant-light text-shadow-sm">
+      <div className="flex flex-col lg:flex-row justify-center items-center">
+        <div className="bg-restaurant-primaryGreen w-full xl:w-1/3 h-[300px] flex flex-col justify-center items-center p-4 m-10 rounded-lg  text-restaurant-light text-shadow-sm">
           <h2 className="text-3xl">Nos Horaires</h2>
           <CardHoraires horaires={horaires} />
           <TransparentButtonHoverFull
@@ -77,7 +77,7 @@ const BodyHomeRestaurant: React.FC = () => {
             color="light"
           />
         </div>
-        <div className="bg-restaurant-primaryGreen w-2/5 flex flex-col justify-between items-center p-4 m-10 rounded-lg  text-restaurant-light text-shadow-sm">
+        <div className="bg-restaurant-primaryGreen w-full md:bg-red-500 lg:bg-green-500 xl:w-1/3 h-[300px] flex flex-col justify-between items-center p-4 m-10 rounded-lg  text-restaurant-light text-shadow-sm">
           <h2 className="text-3xl">Contactez-nous</h2>
           <p> nous répondons sous 24h</p>
           <TransparentButtonHoverFull

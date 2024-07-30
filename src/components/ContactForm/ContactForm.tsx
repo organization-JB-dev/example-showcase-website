@@ -3,7 +3,7 @@ import React from "react";
 const ContactForm: React.FC = () => {
   return (
     <form
-      className="mt-8 flex flex-col items-center border-2 border-restaurant-primaryGreen mx-20 rounded-lg p-8 text-restaurant-primaryGreen"
+      className="mt-8 flex flex-col items-center justify-center border-2 border-restaurant-primaryGreen rounded-lg p-8 font-bold text-restaurant-primaryGreen"
       name="contact"
       method="POST"
       data-netlify="true"
@@ -11,7 +11,7 @@ const ContactForm: React.FC = () => {
       action="/"
     >
       <input type="hidden" name="form-name" value="contact" />
-      <div className="flex flex-col mb-4">
+      <div className="flex flex-col mb-4 ">
         <label htmlFor="name">Nom:</label>
         <input
           className={`py-2 px-3 mt-2 w-80 rounded-md bg-opacity-25 border-2 border-restaurant-primaryGreen   `}

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import MenuMobile from "../../MenuMobile/MenuMobile";
 interface NavbarRestaurantProps {
   fixed?: boolean;
 }
@@ -8,7 +9,7 @@ const NavbarRestaurant: React.FC<NavbarRestaurantProps> = ({
 }) => {
   return (
     <nav
-      className={`bg-restaurant-primaryGreen flex flex-row justify-around ${
+      className={`bg-restaurant-primaryGreen flex flex-row md:justify-around justify-between px-4 items-center ${
         fixed ? "fixed" : ""
       } w-full font-bold text-restaurant-light z-10`}
     >
@@ -19,7 +20,11 @@ const NavbarRestaurant: React.FC<NavbarRestaurantProps> = ({
           className="w-28"
         />
       </Link>
-      <ul className="flex flex-row justify-between items-center w-1/2">
+      <MenuMobile
+        colorText="restaurant-primaryGreen"
+        colorBg="restaurant-light"
+      />
+      <ul className="md:flex flex-row justify-between items-center w-1/2 hidden ">
         <li>
           <Link to="/showcase/restaurant/menu">Menu</Link>
         </li>

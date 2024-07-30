@@ -15,7 +15,7 @@ const PhoneButton: React.FC<PhoneButtonProps> = ({
 }) => {
   return (
     <a
-      className={`fixed bottom-20 p-4 rounded-full bg-${colorBg} text-${colorLogo} right-16 z-10`}
+      className={`fixed bottom-20 p-4 rounded-full bg-restaurant-secondaryPink text-${colorLogo} right-16 z-10 md:hidden`}
       href={phoneNumber}
     >
       <FaPhone />

@@ -77,7 +77,7 @@ const BodyHomeRestaurant: React.FC = () => {
             color="light"
           />
         </div>
-        <div className="bg-restaurant-primaryGreen w-full md:bg-red-500 lg:bg-green-500 xl:w-1/3 h-[300px] flex flex-col justify-between items-center p-4 m-10 rounded-lg  text-restaurant-light text-shadow-sm">
+        <div className="bg-restaurant-primaryGreen w-full xl:w-1/3 h-[300px] flex flex-col justify-between items-center p-4 m-10 rounded-lg  text-restaurant-light text-shadow-sm">
           <h2 className="text-3xl">Contactez-nous</h2>
           <p> nous répondons sous 24h</p>
           <TransparentButtonHoverFull

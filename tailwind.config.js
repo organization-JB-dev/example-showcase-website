@@ -3,14 +3,6 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      clipPath: {
-        hexagon:
-          "polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%)",
-        "hexagon-up":
-          "polygon(25% 0%, 75% 0%, 100% 50%, 75% 50%, 25% 50%, 0% 50%)",
-        "hexagon-down":
-          "polygon(25% 50%, 75% 50%, 100% 100%, 75% 100%, 25% 100%, 0% 50%)",
-      },
       colors: {
         restaurant: {
           light: "#F5F5F5",
@@ -30,10 +22,6 @@ export default {
     },
   },
   plugins: [
-    require("@tailwindcss/forms"),
-    require("@tailwindcss/typography"),
-    require("@tailwindcss/aspect-ratio"),
-    require("@tailwindcss/line-clamp"),
     function ({ addUtilities }) {
       const newUtilities = {
         ".text-shadow": {
